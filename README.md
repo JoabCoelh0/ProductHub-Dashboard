@@ -1,72 +1,69 @@
-🛒 Dashboard de Produtos
+# Dashboard de Produtos
 
-Aplicação web que consome uma API REST para exibir produtos de forma dinâmica em um dashboard, utilizando JavaScript moderno e organização de código baseada no padrão MVC.
+Aplicação web que consome uma API REST para exibir produtos em um dashboard, desenvolvida com JavaScript moderno e organizada segundo um padrão inspirado em MVC (Model–View–Controller).
 
-🧠 Objetivo do Projeto
+---
 
-Este projeto foi desenvolvido com o objetivo de:
+## Objetivo do Projeto
 
-Praticar consumo de API REST
+Este projeto tem como objetivos principais:
 
-Aplicar JavaScript assíncrono (async/await)
+- Praticar o consumo de APIs REST
+- Aplicar JavaScript assíncrono com `async/await`
+- Organizar a manipulação do DOM de forma estruturada
+- Utilizar separação de responsabilidades baseada no padrão MVC
+- Desenvolver um projeto adequado para portfólio profissional
 
-Manipular o DOM de forma organizada
+---
 
-Implementar arquitetura baseada em MVC
+## Arquitetura (MVC)
 
-Criar um projeto consistente para portfólio profissional
+O projeto utiliza uma organização inspirada no padrão MVC, separando claramente as responsabilidades:
 
-🧩 Arquitetura MVC
+- **Model**  
+  Responsável pela comunicação com a API e pelas regras de negócio.
 
-O projeto segue uma estrutura inspirada no padrão MVC (Model–View–Controller), separando responsabilidades de forma clara:
+- **View**  
+  Responsável pela renderização dos dados na interface e manipulação do DOM.
 
-Model: responsável pela comunicação com a API e regras de negócio
+- **Controller**  
+  Responsável por intermediar a comunicação entre Model e View.
 
-View: responsável pela renderização e manipulação do DOM
+Essa abordagem melhora a legibilidade, manutenção e escalabilidade do código.
 
-Controller: responsável por intermediar Model e View
+---
 
-Essa abordagem melhora a manutenção, escalabilidade e legibilidade do código.
+## Funcionalidades
 
-🚀 Funcionalidades
+- Consumo de dados da Fake Store API  
+- Listagem dinâmica de produtos  
+- Exibição de informações como imagem, título, preço e descrição  
+- Organização do código em camadas (Model, View e Controller)  
+- Tratamento de erros em requisições assíncronas  
+- Interface organizada em formato de dashboard  
 
-✅ Consumo de dados da Fake Store API
+---
 
-✅ Listagem dinâmica de produtos
+## Tecnologias Utilizadas
 
-✅ Renderização de cards de produtos
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+- Fetch API  
+- API REST  
 
-✅ Separação clara entre lógica, visual e controle
+### Conceitos aplicados
+- `async / await`  
+- `try / catch`  
+- MVC (Model–View–Controller)  
+- Manipulação do DOM  
+- Modularização de código  
 
-✅ Tratamento de erros em requisições assíncronas
+---
 
-✅ Interface organizada em formato de dashboard
+## Estrutura de Pastas
 
-🛠️ Tecnologias Utilizadas
-
-HTML5
-
-CSS3
-
-JavaScript (ES6+)
-
-Fetch API
-
-API REST
-
-Conceitos aplicados:
-
-async / await
-
-try / catch
-
-MVC (Model–View–Controller)
-
-Manipulação do DOM
-
-Modularização
-
-📂 Estrutura de Pastas (MVC)
+```bash
 📁 dashboard-produtos
  ┣ 📁 assets
  ┃ ┗ imagens e ícones
@@ -82,61 +79,3 @@ Modularização
  ┃ ┗ main.js
  ┣ index.html
  ┗ README.md
-
-🔌 API Utilizada
-
-Nome: Fake Store API
-
-URL: https://fakestoreapi.com
-
-Descrição: API pública que simula produtos de um e-commerce para fins educacionais.
-
-▶️ Como Executar o Projeto
-# Clone o repositório
-git clone https://github.com/seu-usuario/dashboard-produtos
-
-# Acesse a pasta
-cd dashboard-produtos
-
-# Execute
-Abra o arquivo index.html
-
-
-Para melhor experiência, utilize o Live Server.
-
-⚠️ Tratamento de Erros
-
-Uso de try/catch no Model para requisições HTTP
-
-Prevenção de falhas quando a API estiver indisponível
-
-Possibilidade de feedback visual ao usuário
-
-📈 Possíveis Melhorias Futuras
-
-🔹 Implementar filtros por categoria (Controller)
-
-🔹 Campo de busca dinâmica (View + Controller)
-
-🔹 Paginação
-
-🔹 Migração para React mantendo o conceito MVC
-
-🔹 Testes unitários nos Models
-
-👤 Autor
-
-Joab Coelho
-Estudante de Engenharia de Software | Desenvolvedor Front-end
-
-GitHub: https://github.com/seu-usuario
-
-LinkedIn: https://linkedin.com/in/seu-perfil
-
-📝 Licença
-
-Este projeto está sob a licença MIT.
-
-Observação técnica (importante para avaliador)
-
-Embora o MVC seja mais comum no back-end, este projeto aplica o conceito de separação de responsabilidades no front-end, o que demonstra maturidade arquitetural e preocupação com escalabilidade.
