@@ -79,3 +79,18 @@ Essa abordagem melhora a legibilidade, manutenção e escalabilidade do código.
  ┃ ┗ main.js
  ┣ index.html
  ┗ README.md
+````
+ ## API Utilizada
+
+- **Nome:** Fake Store API  
+- **URL:** https://fakestoreapi.com  
+- **Descrição:** API pública que simula dados de produtos de um e-commerce para fins educacionais.
+
+---
+
+## Como Executar o Projeto
+
+```bash
+git clone https://github.com/seu-usuario/dashboard-produtos
+cd dashboard-produtos
+
