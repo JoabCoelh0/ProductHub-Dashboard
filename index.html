@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/globais.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Dark - Shop</title>
+</head>
+<body>
+    <!--Seção de Login e Acesso-->
+
+
+<section id="container-login"> 
+  <div class="box-img">
+      <img src="assets/img/Logomarca.png" alt="Logomarca do sistema" width="250px">
+  </div>    
+  <form id="form-login">
+
+    <div class="box-input">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Usuario@exemplo.com" required>
+    </div>
+
+    <div class="box-input">
+      <label for="senha">Senha</label>
+        
+        <input type="password" id="senha" name="senha" placeholder="Mínimo de 6 caracteres" minlength="6" required>
+    </div>
+
+    <div id="checkout-esqueceu-senha">
+      <label class="checkout">
+        <input type="checkbox" name="remember"> Lembrar de mim
+      </label>
+
+      <a href="#" class="senha">Esqueceu a senha?</a>
+    </div>
+
+    <button type="submit">Entrar</button>
+
+    <div class="divider">
+      <span>Ou faça login com</span>
+    </div>
+
+    <div id="box-btns-acesso" role="group">
+      <button type="button">Google</button>
+      <button type="button">Apple</button>
+    </div>
+    
+    <p id="cadastro-link">
+        Não tem uma conta? <a href="#">Crie uma conta</a>
+    </p>
+  </form>
+
+  
+
+</section>
+
+
+    <script type="module" src="model/api.js"></script>
+</body>
+</html>
