@@ -1,0 +1,38 @@
+#container-login > #form-login > .box-input2{
+    display: flex;
+    width: 100%;
+}
+
+#container-login > #form-login > .box-input2 > .nome-sobrenome{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  align-items: center;
+}
+
+#container-login > #form-login > .box-input2 > .nome-sobrenome > label{
+    width: 80%;
+}
+
+#container-login > #form-login > .box-input2 > .nome-sobrenome > label > span{
+    color: red;
+}
+
+#container-login > #form-login > .box-input2 > .nome-sobrenome > input{
+    margin-top: 5px;
+    width: 80%;
+    height: 46px;
+    border-radius: 10px;
+    padding: 20px;
+    border:  1px solid var(--cor-border-input);
+    background-color: var(--cor-input);
+}
+
+#container-login > #form-login > .box-input > label > span{
+    color: red
+}
+
+#form-login > #cadastro-link{
+    margin: 0;
+}
