@@ -19,6 +19,18 @@ body{
   background-color: #ffff;
   width: 30vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#container-login > .box-img{
+  display: flex;
+  justify-content: center;
+}
+
+#container-login > .box-img > img{
+  width: 200px;
 }
 
 #container-login > #form-login{
@@ -27,14 +39,19 @@ body{
   align-items: center;
   justify-content: center;
   padding: 25px;
+  margin-top: -50px;
+}
+
+#container-login > #form-login > .box-input > label {
+  width: 90%;
 }
 
 #container-login > #form-login > .box-input{
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 25px;
+  align-items: center;
 }
 
 #container-login > #form-login > .box-input > input{
@@ -46,6 +63,7 @@ body{
   border-radius: 10px;
   border: solid 1px var(--cor-border-input);
   background-color: var(--cor-input);
+  
 }
 
 
@@ -53,13 +71,40 @@ body{
   margin-bottom: 5px;
 }
 
+
+#container-login > #form-login > #checkout-esqueceu-senha {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+#container-login > #form-login > #checkout-esqueceu-senha > .checkout, a{
+  color: var(--cor-texto-secundario);
+  text-decoration: none;
+}
+
+
+#container-login > #form-login > #btn-entrar{
+  width: 90%;
+  height: 46px;
+  border: solid 1px var(--cor-button);
+  font-size: 13;
+  font-weight: bold;
+  color: #ffff;
+  border-radius: 10px;
+  background-color:  var(--cor-button);
+  margin-top: 40px;
+  cursor: pointer;
+}
+
 .divider {
   display: flex;
   align-items: center;
-  width: 100%;
-  margin: 20px 0;
+  width: 90%;
+  margin: 30px 0;
   color: #999;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .divider::before,
@@ -73,4 +118,46 @@ body{
 .divider span {
   padding: 0 10px;
   white-space: nowrap;
+}
+
+#form-login > #box-btns-acesso{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#form-login > #box-btns-acesso > button{
+  width: 45%;
+  height: 46px;
+  border-radius: 10px;
+  background-color: #ffff;
+  border: solid 1px var(--cor-border-input);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#form-login > #box-btns-acesso > button > i{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+#form-login > #cadastro-link{
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+#form-login > #cadastro-link > a{
+  font-weight: 600;
+  color: black;
+}  
+
+
+#logo-empresa{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#logo-empresa > a > img{
+  width: 100px;
 }
