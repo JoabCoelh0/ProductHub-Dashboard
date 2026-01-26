@@ -20,6 +20,12 @@
   <div class="box-img">
       <img src="/assets/img/Logomarca.png" alt="Logomarca do sistema" width="250px">
   </div>    
+
+  <div id="box-aviso" class="ativo">
+    <span>Usuario cadastrado com sucesso</span>
+  </div>
+
+
   <form id="form-login">
     <div class="box-input2">
       <div class="nome-sobrenome">
@@ -29,7 +35,7 @@
 
       <div class="nome-sobrenome">
           <label for="Sobrenome">Sobrenome<span>*</span></label>
-          <input type="Sobrenome" id="Sobrenome" name="Sobrenome" placeholder="Sobrenome" required>
+          <input type="Sobrenome" id="sobrenome" name="Sobrenome" placeholder="Sobrenome" required>
       </div>
     </div>
 
@@ -48,7 +54,7 @@
     <div class="box-input">
         <label for="senha">Confirmar senha <span>*</span></label>
       
-        <input type="password" id="senha" name="senha" placeholder="Mínimo de 6 caracteres" minlength="6" required>
+        <input type="password" id="confirmar-senha" name="senha" placeholder="Mínimo de 6 caracteres" minlength="6" required>
     </div>
 
     <button id="btn-entrar" type="submit">Cadastrar</button>
@@ -73,7 +79,6 @@
 
 </section>
 
-
-    <script type="module" src="model/api.js"></script>
+    <script type="module" src="/js/model/localStorege.js"></script>
 </body>
 </html>
