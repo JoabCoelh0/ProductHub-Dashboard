@@ -14,20 +14,17 @@ form.addEventListener('submit', (e) => {
         sobrenome: sobrenome,
         email: email,
         senha: senha,
-        confirmarSenha: confirmarSenha   
+        confirmarSenha: confirmarSenha,  
     }
     
 
 
     function getDados(){
         const usuarios = JSON.parse(localStorage.getItem(email)) 
-        console.log(usuarios);
-        
         return usuarios
-
     }
 
-    function checarNoBanco(){
+    function checarNoEmail(){
         const user = getDados()
         
         if (!user) {
@@ -36,39 +33,34 @@ form.addEventListener('submit', (e) => {
         
         if(email === user.email){
             alert("Email ja cadastrado")
-            console.log(email, user.email);
             return true
         }
         return false
     }
 
     function senhasIguais(senha,confirmarSenha){
-        if(senha !== confirmarSenha){
-            alert('As  não conferem')
-            return false
+        if(senha === confirmarSenha){
+            return true
         } 
-        return true
+        alert('As senhas não são iguais')
+        return false
     }
-    senhasIguais(senha,confirmarSenha)
-
-    function checaUserName(nome, sobrenome){
-        const users = getDados()
-        console.log(users.nome, users.sobrenome)
-    }
-checaUserName()
-    
-    function mostrarErro(){}
 
 
-    function setDados(EmailExiste, senhasIguais){
+    function setDados(emailExiste, senhaIguais){
+        
         const avisoSucesso = document.querySelector('#box-aviso')
-        if(EmailExiste, senhasIguais){
+        
+        if(!emailExiste && senhaIguais){
+
             localStorage.setItem(email, JSON.stringify(dadosUser))
             avisoSucesso.style.display = 'flex'
+            return true
         }
+        return false
     }
     
-    setDados(checarNoBanco(), senhasIguais())
+    setDados(checarNoEmail(), senhasIguais(senha,confirmarSenha))
 })
 
 
