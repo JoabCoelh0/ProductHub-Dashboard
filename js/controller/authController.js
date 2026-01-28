@@ -25,3 +25,9 @@ export function registrarUsuario(dadosUser){
     setDados(dadosUser.email, dadosUser)
     return {success: true}
 }
+/*
+export function liberarAcesso(emailValido, senhaValida){
+    if(emailValido.success && senhaValida.success){
+        window.location.href = 'dashboard.html'
+    }
+}*/
