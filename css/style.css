@@ -7,7 +7,7 @@
 /*Estilização de Pagina de login*/
 
 body{
-  background-image: url(/assets/img/Fundo.jpg);
+  background-image: url(assets/img/Fundo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
